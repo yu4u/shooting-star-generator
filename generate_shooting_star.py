@@ -75,7 +75,7 @@ def main():
             x, y = affine_mat @ trajectory
             cv2.rectangle(dst, (int(x) - 10, int(y) - 10), (int(x) + 10, int(y) + 10), (255, 255, 255), 1)
             cv2.imshow("shooting star", dst)
-            key = cv2.waitKey(-1)
+            key = cv2.waitKey(50)
 
             # "q": quit
             if key == 113:
